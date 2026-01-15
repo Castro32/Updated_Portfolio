@@ -129,7 +129,7 @@ Create `.env` file in `backend/` directory:
 EMAIL_PROVIDER=gmail
 GMAIL_USER=your-email@gmail.com
 GMAIL_APP_PASSWORD=your-gmail-app-password
-SENDER_NAME=Barack Ouma Portfolio
+SENDER_NAME=Fidel Castro Portfolio
 SENDER_EMAIL=your-email@gmail.com
 RECIPIENT_EMAIL=your-email@gmail.com
 

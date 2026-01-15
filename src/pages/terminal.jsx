@@ -12,17 +12,17 @@ import {
 import { SponsorModal, SponsorSuccess } from '@/components/ui/sponsor';
 
 const samplePortfolioData = {
-  "name": "Barack Ouma",
-  "title": "Software Engineer | 2x AWS Certified",
+  "name": "Fidel Castro",
+  "title": "Full Stack Developer | 2x AWS Certified",
   "profile_picture_url": "",
   "bio": "Passionate full-stack developer with expertise in modern web technologies",
   "about_me": "I'm a dedicated developer who loves creating efficient, scalable solutions and learning new technologies.",
   "contact": {
-    "email": "oumaduro5827@gmail.com",
-    "phone": "+254 793 043014",
-    "twitter": "https://twitter.com/BarackOuma7",
-    "github": "https://github.com/IsoDevMate",
-    "linkedin": "https://www.linkedin.com/in/barack-ouma-b37089212/",
+    "email": "okanga.fidel@gmail.com",
+    "phone": "+254114096574",
+    "twitter": "https://github.com/Castro32",
+    "github": "https://github.com/Castro32",
+    "linkedin": "https://www.linkedin.com/in/fidel-castro-0ab8bb239/",
     "location": "Nairobi County, Kenya",
     "website": "https://barackoumasite.netlify.app/"
   },
@@ -231,7 +231,7 @@ const ContactForm = ({ contactData: _contactData }) => {
 
 const UserPrompt = ({ mode }) => (
   <div className="flex items-center">
-    <span className="text-emerald-400 font-mono">barack.ouma</span>
+    <span className="text-emerald-400 font-mono">fidel.castro</span>
     <span className="text-gray-400 font-mono">@</span>
     <span className="text-blue-400 font-mono">portfolio</span>
     <span className="text-white font-mono">:</span>
@@ -1401,8 +1401,8 @@ ${data.skills?.[0]?.values.slice(0, 5).map((skill, i) => `${1000 + i} barack    
     7  history`;
 
         case 'env':
-          return `USER=barack.ouma
-HOME=/home/barack.ouma
+          return `USER=fidel.castro
+HOME=/home/fidel.castro
 SHELL=/bin/bash
 PROFESSION=software_engineer
 LOCATION=nairobi_kenya

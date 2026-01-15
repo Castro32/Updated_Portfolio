@@ -70,8 +70,8 @@ const ContactForm = ({ contactData }) => {
     const [modalConfig, setModalConfig] = useState({ type: 'success', title: '', message: '' });
 
     const socialLinks = [
-        { icon: <Github className="w-5 h-5" />, url: 'https://github.com/IsoDevMate', label: 'GitHub', color: 'hover:text-purple-400' },
-        { icon: <Linkedin className="w-5 h-5" />, url: 'https://linkedin.com/in/barack-ouma-b37089212', label: 'LinkedIn', color: 'hover:text-blue-400' },
+        { icon: <Github className="w-5 h-5" />, url: 'https://github.com/Castro32', label: 'GitHub', color: 'hover:text-purple-400' },
+        { icon: <Linkedin className="w-5 h-5" />, url: 'https://www.linkedin.com/in/fidel-castro-0ab8bb239/', label: 'LinkedIn', color: 'hover:text-blue-400' },
         { icon: <Twitter className="w-5 h-5" />, url: 'https://twitter.com/BarackOuma7', label: 'Twitter', color: 'hover:text-cyan-400' },
     ];
 
@@ -186,10 +186,10 @@ const ContactForm = ({ contactData }) => {
                                 <div>
                                     <p className="text-xs text-gray-400">Email</p>
                                     <a
-                                        href={`mailto:${contactData?.email || 'oumaduor5827@gmail.com'}`}
+                                        href={`mailto:${contactData?.email || 'okanga.fidel@gmail.com'}`}
                                         className="text-sm text-white hover:text-amber-400 transition-colors"
                                     >
-                                        {contactData?.email || 'oumaduor5827@gmail.com'}
+                                        {contactData?.email || 'okanga.fidel@gmail.com'}
                                     </a>
                                 </div>
                             </div>

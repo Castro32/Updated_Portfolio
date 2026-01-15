@@ -3,7 +3,7 @@ import CardMe from '@/components/ui/cardme';
 
 const About = ({ content }) => (
     <CardMe title="About Me">
-        <p className="text-gray-300 leading-relaxed text-sm">{content}</p>
+        <p className="text-[#c3b79d] leading-relaxed text-sm">{content}</p>
     </CardMe>
 );
 
