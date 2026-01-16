@@ -704,13 +704,13 @@ import { Button } from '@/components/ui/button';
 
 const mockPortfolioData = {
   "name": "Fidel Castro",
-  "title": "Full Stack Developer | 2x AWS Certified",
+  "title": "Full Stack Developer | Marketing Specialist",
   "profile_picture_url": "",
   "bio": "Passionate full-stack developer with expertise in modern web technologies",
   "about_me": "I'm a dedicated developer who loves creating efficient, scalable solutions and learning new technologies.",
   "contact": {
     "email": "okanga.fidel@gmail.com",
-    "twitter": "https://twitter.com/BarackOuma7",
+    "twitter": "https://x.com/castro_okanga",
     "github": "https://github.com/Castro32",
     "linkedin": "https://www.linkedin.com/in/fidel-castro-0ab8bb239/",
     "location": "Nairobi County, Kenya",
@@ -1085,7 +1085,7 @@ const LoadingScreen = () => (
       transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
       className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full" // Uses --primary
     />
-    <span className="ml-3 text-primary">Loading portfolio...</span> {/* Uses --primary */}
+    <span className="ml-3 text-primary">FIDEL CASTRO...</span> {/* Uses --primary */}
   </motion.div>
 );
 
