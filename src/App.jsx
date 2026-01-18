@@ -836,7 +836,7 @@ const mockPortfolioData = {
         "Stay updated with industry trends, best practices, and emerging technologies in web development and design.",
         "Ensure website security, regular updates, and proper backup procedures."
       ],
-      // "tags": ["AI", "Video Generation", "Next.js", "NestJS", "TikTok API", "Instagram API", "YouTube API", "Paystack", "SaaS", "OAuth"]
+      "tags": ["Web Development", "UI/UX Design", "SEO", "Performance Optimization", "Cross-Platform Compatibility", "Security", "Maintenance"]
     },
     {
       "id": 5,
@@ -858,7 +858,7 @@ const mockPortfolioData = {
     },
     {
       "id": 7,
-      "title": "Innovative Engineer",
+      "title": "Innovatiion Engineer",
       "company": "STEMROBO Technologies",
       "dates": "April 2025 - September 2025 · 5 mos",
       "location": "Nairobi County, Kenya · On-site",
@@ -871,7 +871,7 @@ const mockPortfolioData = {
         "Planned and facilitated STEM competitions and hackathons to encourage creativity, collaboration, and innovation.",
         "Continuously researched emerging STEM education trends to enhance and update program content."
       ],
-      //"tags": ["Next.js", "NestJS", "PostgreSQL", "Redis", "Payment Integration", "PCI DSS", "CI/CD", "AWS"]
+      "tags": ["STEM Education", "Robotics", "IoT", "Curriculum Development", "Student Mentorship", "Workshop Facilitation"]
     },
     {
       "id": 1,
@@ -889,7 +889,7 @@ const mockPortfolioData = {
         "Provided technical documentation and user training for system adoption"
 
       ],
-      // "tags": ["Technical Documentation", "TypeScript", "Node.js", "Java", "AWS"]
+      "tags": ["React", "Material UI", "WebSockets", "REST APIs", "Performance Optimization"]
     },
     {
       "id": 2,
@@ -959,7 +959,7 @@ const mockPortfolioData = {
       //"tags": ["Flutter", "Dart", "Cross-platform", "Mobile Development", "Event Management", "Real-time"]
     },
       {
-        "id": 4,
+        "id": 3,
         "name": "Cargo Tracking System",
         "description": "A comprehensive cargo tracking system for Keshi Holdings Limited using React and Material UI. Implemented key modules including driver management, cargo carrier management, cargo tracking, and journey management with real-time updates via WebSockets. Collaborated with backend teams to integrate RESTful APIs, ensuring seamless data flow and optimized application performance across devices.",
         //"techStack": ["React", "Material UI", "WebSockets", "RESTful APIs"],
@@ -975,7 +975,7 @@ const mockPortfolioData = {
         
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Quiet Empire Podcast",
         "description": " A podcast website dedicated to sharing inspiring stories and insights from various guests. The platform features episodes, show notes, and subscription options, allowing listeners to easily access and engage with the content.",
         //"techStack": ["React", "Material UI", "WebSockets", "RESTful APIs"],

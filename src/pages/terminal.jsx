@@ -7,7 +7,8 @@ import { Textarea } from '@/components/ui/textarea';
 import {
   X, Mail, Phone, MapPin, Calendar, Award, ExternalLink,
   Send, Download, FileText, Globe, Github, Linkedin,
-  Twitter, Terminal, Cpu, Code, Loader2, Heart, CreditCard
+  Twitter, Terminal, Cpu, Code, Loader2, Heart, CreditCard,
+  Tags
 } from 'lucide-react';
 import { SponsorModal, SponsorSuccess } from '@/components/ui/sponsor';
 
@@ -24,26 +25,27 @@ const samplePortfolioData = {
     "github": "https://github.com/Castro32",
     "linkedin": "https://www.linkedin.com/in/fidel-castro-0ab8bb239/",
     "location": "Nairobi County, Kenya",
-    "website": "https://barackoumasite.netlify.app/"
+    "website": "https://fidel-castro-portfolio.vercel.app/"
   },
   "experience": [
     {
       "id": 4,
-      "title": "Software Engineer I",
-      "company": "Groreels",
-      "dates": "Dec 2024 - Nov 2025 · 1 yr",
-      "location": "Remote",
+      "title": "Full Stack Developer & Digital Marketing Specialist",
+      "company": "CB Consulting & Media Group",
+      "dates": "Sep 2025 - Present",
+      "location": "OnSite",
       "description_points": [
-        "Researched and benchmarked AI video tooling (HeyGen, Pika, Stable Diffusion, Arcads, MakeUGC.ai) to cut UGC generation costs by 60%",
-        "Built an AI UGC video generator integrating HeyGen influencer avatars for personalized, auto-generated campaign assets",
-        "Implemented OAuth-based auth flows for TikTok, Instagram, and YouTube APIs with secure token storage and renewal",
-        "Developed auto-posting, cross-platform scheduling, and real-time performance tracking for social campaigns",
-        "Shipped a drag-and-drop content calendar powering multi-platform campaign orchestration",
-        "Created a super-admin portal with role-based access control, tenant-level analytics, and feature flags",
-        "Integrated Paystack with tiered subscription plans and recurring billing for the SaaS platform",
-        "Implemented an affiliate program with referral tracking, commission computation, and partner performance dashboards"
+        "Design, develop, and maintain responsive, user-friendly websites and web application",
+        "Create visually appealing layouts, graphics, and interfaces aligned with brand guidelines.",
+        "Develop and manage both front-end and back-end functionalities (UI/UX, databases, APIs, server-side logic).",
+        "Optimize websites for speed, performance, SEO, and mobile responsiveness.",
+        "Ensure cross-browser, cross-platform, and device compatibility.",
+        "Maintain and update existing websites, troubleshooting and resolving technical issues.",
+        "Collaborate with internal teams to deliver digital solutions that meet client requirements.",
+        "Stay updated with industry trends, best practices, and emerging technologies in web development and design.",
+        "Ensure website security, regular updates, and proper backup procedures."
       ],
-      "tags": ["AI", "Video Generation", "Next.js", "NestJS", "TikTok API", "Instagram API", "YouTube API", "Paystack", "SaaS", "OAuth"]
+      "tags": ["Web Development", "UI/UX Design", "SEO", "Performance Optimization", "Cross-Platform Compatibility", "Security", "Maintenance"]
     },
     {
       "id": 3,
@@ -65,48 +67,79 @@ const samplePortfolioData = {
     },
     {
       "id": 1,
-      "title": "FullStack Engineer",
-      "company": "Redolesence Ltd",
-      "dates": "Nov 2024 - Feb 2025",
-      "location": "Nairobi, Kenya",
+      "title": "Innovatiion Engineer",
+      "company": "STEMROBO Technologies",
+      "dates": "April 2025 - September 2025 · 5 mos",
+      "location": "Nairobi County, Kenya · On-site",
       "description_points": [
-        "Collaborated with the IoT hardware team to design communication schemas and backend interfaces",
-        "Reduced Firestore database reads by optimizing backend polling logic and caching strategies",
-        "Integrated real-time Push Notifications and WebSocket signals between IoT devices and backend"
+        "Led the design and delivery of engaging STEM learning programs covering robotics, AI, IoT, and coding for K–12 students.",
+        "Conducted interactive workshops and innovation lab sessions across multiple schools, building strong problem-solving, critical thinking, and design-thinking skills.",
+        "Mentored students in creating functional prototypes using Arduino, sensors, and 3D printing technologies.",
+        "Designed and customized lesson plans and teaching materials to suit different age groups and learning abilities.",
+        "Worked closely with teachers to embed STEM concepts into existing curricula, improving classroom engagement and outcomes.",
+        "Planned and facilitated STEM competitions and hackathons to encourage creativity, collaboration, and innovation.",
+        "Continuously researched emerging STEM education trends to enhance and update program content."
       ],
-      "tags": ["IoT", "Firebase", "WebSockets", "Node.js"]
+      "tags": ["STEM Education", "Robotics", "IoT", "Curriculum Development", "Student Mentorship", "Workshop Facilitation"]
     },
     {
       "id": 2,
-      "title": "FullStack Engineer",
-      "company": "Yafreeka Entertainment Ltd",
-      "dates": "Oct 2023 - Feb 2024",
-      "location": "Nairobi, Kenya",
+      "title": "Frontend Developer(External Developer)",
+      "company": "Keshi Holdings Limited",
+      "dates": "Oct 2024 - March 2025 · 6 mos",
+      "location": "Nairobi County, Kenya · Remote",
       "description_points": [
-        "Migrated backend services to Firebase, improving video load speed by 30%",
-        "Developed Cloud Functions to automate internal workflows and payment processes",
-        "Enhanced application performance through strategic backend optimization"
+        "Developed React & Material UI interfaces for national cargo tracking system, including CRUD functionality",
+        "Built comprehensive driver, cargo carrier, cargo tracking, and journey management modules",
+        "Implemented real-time updates via WebSockets and created dynamic data mapping for all system modules",
+        "Collaborated with backend team to integrate RESTful APIs and ensure seamless data flow",
+        "Optimized application performance and responsiveness across devices",
+        "Conducted thorough testing and debugging to ensure high-quality deliverables",
+        "Provided technical documentation and user training for system adoption"
+
       ],
-      "tags": ["Firebase", "Cloud Functions", "Performance Optimization"]
+      "tags": ["React", "Material UI", "WebSockets", "REST APIs", "Performance Optimization"]
     }
   ],
   "projects": [
     {
       "id": 1,
-      "name": "ComfyBase Event Management System",
-      "description": "A comprehensive Smart event management platform designed to simplify event organization, enhance attendee engagement, and provide seamless event experiences. Features real-time interactions, live streaming, interactive note-taking, media sharing, and an awards system.",
-      "website_link": "https://final-year-project-swart-phi.vercel.app/",
-      "details_link": "",
-      "tags": ["React", "Node.js", "MongoDB", "WebRTC", "Real-time", "Event Management", "Live Streaming"]
+      "name": "Avya Beauty Salon",
+      "description": "A modern beauty and wellness platform that connects clients with salon services through easy online booking, service browsing, and appointment management. It offers a seamless user experience for discovering treatments, scheduling visits, and staying updated with salon offers and trends.",
+      "website_link": "https://avyabeauty.com",
+      "tags": ["React", "Node.js", "Express", "MongoDB", "REST APIs", "Responsive Design"]
     },
     {
       "id": 2,
-      "name": "ComfyBase Mobile App",
-      "description": "Cross-platform mobile application for event management with Flutter. Features interactive note-taking, multimedia support, QR code verification, and seamless cross-platform accessibility for Android, iOS, Web, and Desktop.",
-      "website_link": "https://comfybase-plp-7wum.vercel.app/",
-      "details_link": "https://github.com/IsoDevMate/comfybase-plp",
-      "tags": ["Flutter", "Dart", "Cross-platform", "Mobile Development", "Event Management", "Real-time"]
-    }
+      "name": "Organic Bloom",
+      "description": "A full-featured eCommerce platform for selling organic and health products, offering smooth online shopping with M-Pesa STK Push payments. It includes order tracking, inventory management, and an easy-to-use interface for customers to browse, purchase, and monitor their orders in real time.",
+      "website_link": "https://organicbloom.co.ke/",
+      "tags": ["Next.js", "NestJS", "PostgreSQL", "Redis", "Payment Integration", "Docker", "AWS"]
+    },
+    {
+        "id": 3,
+        "name": "Cargo Tracking System",
+        "description": "A comprehensive cargo tracking system for Keshi Holdings Limited using React and Material UI. Implemented key modules including driver management, cargo carrier management, cargo tracking, and journey management with real-time updates via WebSockets. Collaborated with backend teams to integrate RESTful APIs, ensuring seamless data flow and optimized application performance across devices.",
+        //"techStack": ["React", "Material UI", "WebSockets", "RESTful APIs"],
+        "website_link": "https://ects.keshiholdings.com/",
+        
+      },
+      {
+        "id": 4,
+        "name": "EMS Markert Mall",
+        "description": "A website for an upcoming shopping mall located in Lavington, Nairobi, Kenya. The platform showcases the mall, its shops, and services, providing visitors with information about available spaces, stores, and updates as the mall prepares for launch.",
+        //"techStack": ["React", "Material UI", "WebSockets", "RESTful APIs"],
+        "website_link": "https://www.emsmarket.co.ke/",
+        
+      },
+      {
+        "id": 5,
+        "name": "Quiet Empire Podcast",
+        "description": " A podcast website dedicated to sharing inspiring stories and insights from various guests. The platform features episodes, show notes, and subscription options, allowing listeners to easily access and engage with the content.",
+        //"techStack": ["React", "Material UI", "WebSockets", "RESTful APIs"],
+        "website_link": "https://quietempirepodcast.com/",
+        
+      },
   ],
   "skills": [
     {
@@ -127,8 +160,8 @@ const samplePortfolioData = {
     }
   ],
   "education": {
-    "degree": "BSc. Information Technology",
-    "university": "Kenyatta University",
+    "degree": "BSc. Information Communication Technology",
+    "university": "KCA University",
     "dates": "2021 - 2025",
     "description": "Specialized in web technologies and software development",
     "tags": ["Computer Science", "Programming"]
@@ -335,16 +368,16 @@ const WelcomeBanner = () => (
   <div className="text-center mb-6 p-4 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg border border-gray-700">
     <pre className="text-green-400 font-mono text-xs leading-none mb-2">
 {`
-██████╗  █████╗ ██████╗  █████╗  ██████╗██╗  ██╗     ██████╗ ██╗   ██╗███╗   ███╗ █████╗
-██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝██║ ██╔╝    ██╔═══██╗██║   ██║████╗ ████║██╔══██╗
-██████╔╝███████║██████╔╝███████║██║     █████╔╝     ██║   ██║██║   ██║██╔████╔██║███████║
-██╔══██╗██╔══██║██╔══██╗██╔══██║██║     ██╔═██╗     ██║   ██║██║   ██║██║╚██╔╝██║██╔══██║
-██████╔╝██║  ██║██║  ██║██║  ██║╚██████╗██║  ██╗    ╚██████╔╝╚██████╔╝██║ ╚═╝ ██║██║  ██║
-╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝     ╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝
+███████╗██╗██████╗ ███████╗██╗          ██████╗ █████╗ ███████╗████████╗██████╗  ██████╗ 
+██╔════╝██║██╔══██╗██╔════╝██║         ██╔════╝██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔═══██╗
+█████╗  ██║██║  ██║█████╗  ██║         ██║     ███████║███████╗   ██║   ██████╔╝██║   ██║
+██╔══╝  ██║██║  ██║██╔══╝  ██║         ██║     ██╔══██║╚════██║   ██║   ██╔══██╗██║   ██║
+██║     ██║██████╔╝███████╗███████╗    ╚██████╗██║  ██║███████║   ██║   ██║  ██║╚██████╔╝
+╚═╝     ╚═╝╚═════╝ ╚══════╝╚══════╝     ╚═════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ 
 `}
     </pre>
     <div className="text-blue-400 font-mono text-sm mb-1">PORTFOLIO TERMINAL v2.1.0</div>
-    <div className="text-gray-400 font-mono text-xs">Welcome to Barack Ouma's Interactive Portfolio</div>
+    <div className="text-gray-400 font-mono text-xs">Welcome to IDEL CASTRO'S Interactive Portfolio</div>
     <div className="text-yellow-400 font-mono text-xs mt-2">Type 'help' to see available commands • 'neofetch' for system info • 'exit' to quit</div>
 
     {/* Terminal Payment Awareness Banner */}
@@ -483,7 +516,7 @@ Try: mutation sponsorship 49`;
                 }
 
                 // Prompt for email address
-                const email = args[2] || 'barack.ouma@example.com'; // Default email if not provided
+                const email = args[2] || 'okanga.fidel@example.com'; // Default email if not provided
 
                 if (!email || email === 'sponsor@example.com') {
                   return `❌ GraphQL Error: Valid email address required
@@ -1057,7 +1090,7 @@ ${project.description}
 
           case 'sponsor': {
             const amount = args[0] ? parseInt(args[0]) : null;
-            const email = args[1] || 'barack.ouma@example.com'; // Default email
+            const email = args[1] || 'okanga.fidel@example.com'; // Default email
 
             if (amount && amount > 0) {
               // Validate minimum amount
@@ -1243,7 +1276,7 @@ Title:    ${data.title}
 Bio:      ${data.bio}`;
 
         case 'id':
-          return `uid=1000(barack.ouma) gid=1000(developers) groups=1000(developers),27(sudo),44(video),46(plugdev),116(lpadmin),126(sambashare),999(docker)`;
+          return `uid=1000(okanga.fidel) gid=1000(developers) groups=1000(developers),27(sudo),44(video),46(plugdev),116(lpadmin),126(sambashare),999(docker)`;
 
         case 'pwd':
           return `/home/barack.ouma/portfolio`;
@@ -1252,13 +1285,13 @@ Bio:      ${data.bio}`;
           if (flag === '-l') {
             setDisplayData({ type: 'ls-detailed', content: data });
             return `total 12
-drwxr-xr-x 2 barack developers 4096 Aug  3 10:30 experience/
-drwxr-xr-x 2 barack developers 4096 Aug  3 10:30 projects/
-drwxr-xr-x 2 barack developers 4096 Aug  3 10:30 skills/
--rw-r--r-- 1 barack developers 1024 Aug  3 10:30 about.txt
--rw-r--r-- 1 barack developers 2048 Aug  3 10:30 contact.info
--rw-r--r-- 1 barack developers  512 Aug  3 10:30 education.md
--rw-r--r-- 1 barack developers 1536 Aug  3 10:30 certifications.json`;
+drwxr-xr-x 2 okanga developers 4096 Aug  3 10:30 experience/
+drwxr-xr-x 2 okanga developers 4096 Aug  3 10:30 projects/
+drwxr-xr-x 2 okanga developers 4096 Aug  3 10:30 skills/
+-rw-r--r-- 1 okanga developers 1024 Aug  3 10:30 about.txt
+-rw-r--r-- 1 okanga developers 2048 Aug  3 10:30 contact.info
+-rw-r--r-- 1 okanga developers 512 Aug 3 10:30 education.md
+-rw-r--r-- 1 okanga developers 1536 Aug  3 10:30 certifications.json`;
           } else {
             setDisplayData({ type: 'ls-simple', content: data });
             return `about.txt       certifications.json  education.md
@@ -1389,7 +1422,7 @@ Tasks: ${data.skills?.reduce((acc, s) => acc + s.values.length, 0)} total skills
 %Cpu(s): 95.2 us (actively developing)
 
   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
-${data.skills?.[0]?.values.slice(0, 5).map((skill, i) => `${1000 + i} barack    20   0   ${100 + i*10}m   ${20 + i*5}m   ${10 + i}m S  ${95 - i*5}.${i}   ${5 + i}.0   ${i}:${30 + i} ${skill.toLowerCase()}`).join('\n')}`;
+${data.skills?.[0]?.values.slice(0, 5).map((skill, i) => `${1000 + i} fidel    20   0   ${100 + i*10}m   ${20 + i*5}m   ${10 + i}m S  ${95 - i*5}.${i}   ${5 + i}.0   ${i}:${30 + i} ${skill.toLowerCase()}`).join('\n')}`;
 
         case 'history':
           return `    1  whoami
@@ -1413,7 +1446,7 @@ GITHUB_USERNAME=IsoDevMate`;
 
         case 'uname':
           if (flag === '-a') {
-            return `Portfolio 5.4.0-portfolioOS #1 SMP Barack-Kernel x86_64 x86_64 x86_64 PortfolioOS/Ubuntu`;
+            return `Portfolio 5.4.0-portfolioOS #1 SMP Fidel-Kernel x86_64 x86_64 x86_64 PortfolioOS/Ubuntu`;
           }
           return `PortfolioOS`;
 
@@ -1512,7 +1545,7 @@ Creativity:    ∞           High        ∞         ∞`;
 
         case 'crontab':
           if (flag === '-l') {
-            return `# Barack's scheduled tasks
+            return `# Fidel's scheduled tasks
 0 9 * * 1-5 /usr/bin/code # Start coding at 9 AM weekdays
 0 12 * * * /usr/bin/coffee # Daily coffee break
 0 18 * * * /usr/bin/git-commit # Daily code commit
@@ -1535,7 +1568,7 @@ alias skills='cat ~/skills.txt'`;
 
         case 'tree':
           setDisplayData({ type: 'tree', content: data });
-          return `/home/barack.ouma/portfolio
+          return `/home/okanga.fidel/portfolio
 ├── experience/
 │   ├── organic-bloom/
 │   ├── redolesence/
@@ -1558,7 +1591,7 @@ alias skills='cat ~/skills.txt'`;
         case 'sudo':
           if (args[0] === 'contact') {
             setDisplayData({ type: 'contact', content: data.contact });
-            return `[sudo] password for barack: ****
+            return `[sudo] password for fidel: ****
 Access granted. Contact information unlocked.
 
 📧 Email: ${data.contact.email}
@@ -1571,7 +1604,7 @@ Access granted. Contact information unlocked.
 
         case 'sponsor': {
           const amount = args[0] ? parseInt(args[0]) : null;
-          const email = args[1] || 'barack.ouma@example.com'; // Default email
+          const email = args[1] || 'fidel.okanga@example.com'; // Default email
 
           if (amount && amount > 0) {
             // Validate minimum amount
@@ -1669,7 +1702,7 @@ Your support means the world to me! ❤️
             setDisplayData({ type: 'vim-resume', content: data });
             return `"resume.txt" 45L, 2048C
 
-~ VIM - Barack Ouma Resume ~
+~ VIM - Fidel Castro Resume ~
 :q to quit, :w to save
 
 NAME: ${data.name}
@@ -1981,7 +2014,7 @@ const DisplayPanel = ({ displayData, mode, scrollRef }) => {
                 -- INSERT MODE -- | :wq to save and quit | :q! to quit without saving
               </div>
               <pre className="text-green-200 font-mono text-xs whitespace-pre-wrap">
-{`=== BARACK OUMA - RESUME ===
+{`=== Fidel Castro - RESUME ===
 
 CONTACT:
 Email: ${displayData.content.contact.email}
@@ -2701,7 +2734,7 @@ export default function EnhancedTerminal({ portfolioData = samplePortfolioData, 
           <Card className="bg-[#0a0a0a] border-gray-800 flex flex-col flex-1">
             <CardHeader className="pb-2 border-b border-gray-800 flex-shrink-0">
               <CardTitle className="text-green-400 font-mono text-sm flex items-center gap-2">
-                <span className={isInputFocused ? 'animate-pulse' : ''}>●</span> barack@portfolio-terminal
+                <span className={isInputFocused ? 'animate-pulse' : ''}>●</span> fidel@portfolio-terminal
                 <span className="ml-auto text-xs text-gray-500">
                   {mode} mode
                 </span>

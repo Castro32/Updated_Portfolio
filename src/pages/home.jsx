@@ -31,7 +31,7 @@ export default function HomePage({ portfolioData }) {
             <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-24">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div className="md:col-span-2 space-y-12">
-                    <About content={portfolioData.about_me} />
+                    <About className="##821d30"content={portfolioData.about_me} />
                     <Experience items={portfolioData.experience} />
                         </div>
                     <div className="space-y-12">
