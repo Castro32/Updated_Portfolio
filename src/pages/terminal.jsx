@@ -120,15 +120,13 @@ const samplePortfolioData = {
         "id": 3,
         "name": "Cargo Tracking System",
         "description": "A comprehensive cargo tracking system for Keshi Holdings Limited using React and Material UI. Implemented key modules including driver management, cargo carrier management, cargo tracking, and journey management with real-time updates via WebSockets. Collaborated with backend teams to integrate RESTful APIs, ensuring seamless data flow and optimized application performance across devices.",
-        //"techStack": ["React", "Material UI", "WebSockets", "RESTful APIs"],
-        "website_link": "https://ects.keshiholdings.com/",
+        "website_link": "https://ects.keshiholdings.com",
         
       },
       {
         "id": 4,
         "name": "EMS Markert Mall",
         "description": "A website for an upcoming shopping mall located in Lavington, Nairobi, Kenya. The platform showcases the mall, its shops, and services, providing visitors with information about available spaces, stores, and updates as the mall prepares for launch.",
-        //"techStack": ["React", "Material UI", "WebSockets", "RESTful APIs"],
         "website_link": "https://www.emsmarket.co.ke/",
         
       },
