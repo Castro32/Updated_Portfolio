@@ -22,7 +22,7 @@ dotenv.config()
 const app = express();
 
 // Keep-alive configuration
-const SERVER_URL = process.env.SERVER_URL || 'https://better-portfolio.onrender.com';
+const SERVER_URL = process.env.SERVER_URL || "https://fidel-castro-portfolio.vercel.app/";
 
 // Simple keep-alive function
 const keepAlive = async () => {
@@ -189,7 +189,7 @@ app.post('/verify-payment', async (req, res) => {
       try {
         const transporter = getEmailTransporter();
         const mailOptions = {
-          from: `"${process.env.SENDER_NAME || 'Barack Ouma Portfolio'}" <${process.env.SENDER_EMAIL}>`,
+          from: `"${process.env.SENDER_NAME || 'FIDEL CASTRO PORTFOLIO'}" <${process.env.SENDER_EMAIL}>`,
           to: process.env.RECIPIENT_EMAIL,
           subject: `🎉 Terminal Sponsorship: ${sponsorAmount} from ${sponsorName}`,
           html: `
@@ -289,7 +289,7 @@ app.post('/support-email', async (req, res) => {
 
     // Email content for contact form
     const mailOptions = {
-      from: `"${process.env.SENDER_NAME || 'Barack Ouma Portfolio'}" <${process.env.SENDER_EMAIL}>`,
+      from: `"${process.env.SENDER_NAME || 'Fidel Castro Portfolio'}" <${process.env.SENDER_EMAIL}>`,
       to: process.env.RECIPIENT_EMAIL, // Where you want to receive emails
       subject: `Portfolio Contact: ${subject}`,
       html: `
@@ -358,15 +358,25 @@ app.post('/support-email', async (req, res) => {
 // Paystack webhook endpoint
 app.post('/paystack-webhook', async (req, res) => {
   try {
+    console.log('=====================================');
+    console.log('📍 PAYSTACK WEBHOOK HIT');
+    console.log('=====================================');
+    console.log('⏰ Timestamp:', new Date().toISOString());
+    console.log('📤 Request Headers:', JSON.stringify(req.headers, null, 2));
+    console.log('📥 Request Body:', JSON.stringify(req.body, null, 2));
+    
     // Verify webhook signature
     if (!verifyPaystackWebhook(req)) {
       console.log('❌ Invalid Paystack webhook signature');
+      console.log('Expected signature:', req.headers['x-paystack-signature']);
       return res.status(401).json({ error: 'Invalid signature' });
     }
 
+    console.log('✅ Webhook signature verified');
     const { event, data } = req.body;
 
     if (event === 'charge.success') {
+      console.log('🎯 Event Type: charge.success');
       const { amount, customer, reference, metadata } = data;
       const sponsorAmount = amount / 100; // Convert from kobo to naira
       const sponsorEmail = customer?.email || metadata?.email || 'anonymous@example.com';
@@ -374,6 +384,14 @@ app.post('/paystack-webhook', async (req, res) => {
         ? `${customer.first_name} ${customer.last_name}`
         : metadata?.name || 'Anonymous';
 
+      console.log('💾 Payment Data:', {
+        amount: sponsorAmount,
+        currency: data.currency,
+        status: data.status,
+        customer: { email: sponsorEmail, name: sponsorName },
+        reference: reference,
+        metadata: metadata
+      });
       console.log(`🎉 Payment successful! Amount: ${sponsorAmount} | Sponsor: ${sponsorName} | Reference: ${reference}`);
 
       // Send sponsorship notification email
@@ -381,7 +399,7 @@ app.post('/paystack-webhook', async (req, res) => {
         const transporter = getEmailTransporter();
 
         const mailOptions = {
-          from: `"${process.env.SENDER_NAME || 'Barack Ouma Portfolio'}" <${process.env.SENDER_EMAIL}>`,
+          from: `"${process.env.SENDER_NAME || 'Fidel Castro Portfolio'}" <${process.env.SENDER_EMAIL}>`,
           to: process.env.RECIPIENT_EMAIL,
           subject: `🎉 New Sponsorship: ${sponsorAmount} from ${sponsorName}`,
           html: `
@@ -427,11 +445,17 @@ app.post('/paystack-webhook', async (req, res) => {
       } catch (emailError) {
         console.error('❌ Error sending sponsorship notification email:', emailError);
       }
+    } else {
+      console.log('⚠️ Unhandled event type:', event);
+      console.log('📊 Full event data:', JSON.stringify(req.body, null, 2));
     }
 
+    console.log('✅ Webhook processed successfully');
+    console.log('=====================================');
     res.json({ status: 'success' });
   } catch (error) {
     console.error('❌ Error processing Paystack webhook:', error);
+    console.log('=====================================');
     res.status(500).json({ error: 'Webhook processing failed' });
   }
 });
@@ -669,7 +693,7 @@ app.use('/graphql', graphqlHTTP({
 // Root endpoint
 app.get('/', (req, res) => {
   res.json({
-    message: '💻 Barack Ouma Portfolio Backend',
+    message: '💻 Fidel Castro Portfolio Backend',
     provider: process.env.EMAIL_PROVIDER || 'Gmail',
     endpoints: {
       'POST /support-email': 'Send contact form email',

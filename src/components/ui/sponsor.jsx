@@ -22,7 +22,6 @@ const SponsorModal = ({ isOpen, onClose, onSponsor }) => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [showTerminalTip, setShowTerminalTip] = useState(false);
 
-  // Updated pricing structure - minimum 49, custom minimum 29
   const presetAmounts = [49, 99, 199, 499, 999, 1999];
 
   const handleSponsor = async () => {
@@ -45,14 +44,13 @@ const SponsorModal = ({ isOpen, onClose, onSponsor }) => {
       // Initialize Paystack payment
       const handler = window.PaystackPop.setup({
         key: import.meta.env.VITE_PAYSTACK_PUBLIC_KEY || 'pk_test_your_paystack_key_here',
-        email: import.meta.env.VITE_SPONSOR_EMAIL || 'barack.ouma@example.com', // Replace with your email
-        amount: amount * 100, // Paystack expects amount in kobo (smallest currency unit)
-        currency: 'KES', // Using Kenyan Shilling - update this to your supported currency
+        email: import.meta.env.VITE_SPONSOR_EMAIL || 'barack.ouma@example.com', 
+        amount: amount * 100, 
+        currency: 'KES',
         ref: `sponsor_${Date.now()}`,
         callback: function(response) {
           console.log('Payment successful:', response);
 
-          // Send sponsorship notification email via backend
           fetch('http://localhost:3001/sponsorship-email', {
             method: 'POST',
             headers: {
@@ -60,8 +58,8 @@ const SponsorModal = ({ isOpen, onClose, onSponsor }) => {
             },
             body: JSON.stringify({
               amount: amount,
-              email: 'sponsor@example.com', // You can collect this from the payment form
-              name: 'Anonymous Sponsor', // You can collect this from the payment form
+              email: 'sponsor@example.com', 
+              name: 'Anonymous Sponsor', 
               reference: response.reference
             }),
           }).catch(error => {
