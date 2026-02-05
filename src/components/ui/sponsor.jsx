@@ -22,21 +22,21 @@ const SponsorModal = ({ isOpen, onClose, onSponsor }) => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [showTerminalTip, setShowTerminalTip] = useState(false);
 
-  const presetAmounts = [49, 99, 199, 499, 999, 1999];
+  const presetAmounts = [19, 49, 99, 199, 499, 999, 1999];
 
   const handleSponsor = async () => {
     const amount = customAmount ? parseInt(customAmount) : selectedAmount;
 
     // Validate minimum amounts
-    if (customAmount && amount < 29) {
-      alert('Custom amount must be at least 29 KES');
+    if (customAmount && amount < 19) {
+      alert('Custom amount must be at least 19 KES');
       return;
     }
 
-    if (amount < 49) {
-      alert('Minimum sponsorship amount is 49 KES');
-      return;
-    }
+    // if (amount < 49) {
+    //   alert('Minimum sponsorship amount is 49 KES');
+    //   return;
+    // }
 
     setIsProcessing(true);
 
@@ -127,20 +127,20 @@ const SponsorModal = ({ isOpen, onClose, onSponsor }) => {
 
           <div className="space-y-2">
             <label className="text-sm text-gray-200 font-medium">
-              Custom Amount <span className="text-yellow-400">(Min: 29 KES)</span>
+              Custom Amount <span className="text-yellow-400">(Min: 19 KES)</span>
             </label>
             <input
               type="number"
               value={customAmount}
               onChange={(e) => setCustomAmount(e.target.value)}
-              placeholder="Enter amount (min 29)"
-              min="29"
+              placeholder="Enter amount (min 19 KES)"
+              min="19"
               className="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-300 focus:border-green-500 focus:ring-1 focus:ring-green-500"
             />
-            {customAmount && parseInt(customAmount) < 29 && (
+            {customAmount && parseInt(customAmount) < 19 && (
               <div className="flex items-center gap-2 text-red-400 text-xs">
                 <AlertCircle className="w-3 h-3" />
-                <span>Custom amount must be at least 29 KES</span>
+                <span>Custom amount must be at least 19 KES</span>
               </div>
             )}
           </div>
@@ -148,7 +148,7 @@ const SponsorModal = ({ isOpen, onClose, onSponsor }) => {
           <div className="flex gap-2">
             <Button
               onClick={handleSponsor}
-              disabled={isProcessing || (customAmount && parseInt(customAmount) < 29)}
+              disabled={isProcessing || (customAmount && parseInt(customAmount) < 19)}
               className="flex-1 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-medium"
             >
               {isProcessing ? (

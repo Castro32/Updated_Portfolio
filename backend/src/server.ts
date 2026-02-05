@@ -91,19 +91,19 @@ app.post('/terminal-sponsor', async (req, res) => {
     }
 
     // Validate minimum amount (49 KES for preset amounts, 29 KES for custom)
-    if (amount < 29) {
+    if (amount < 19) {
       return res.status(400).json({
         success: false,
-        error: 'Minimum sponsorship amount is 29 KES'
+        error: 'Minimum sponsorship amount is 19 KES'
       });
     }
 
-    if (amount < 49) {
-      return res.status(400).json({
-        success: false,
-        error: 'Minimum sponsorship amount is 49 KES'
-      });
-    }
+    // if (amount < 49) {
+    //   return res.status(400).json({
+    //     success: false,
+    //     error: 'Minimum sponsorship amount is 49 KES'
+    //   });
+    // }
 
     // Generate unique reference
     const reference = `terminal_sponsor_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
@@ -611,16 +611,16 @@ const paymentResolvers = {
         };
       }
 
-      if (amount < 49) {
-        return {
-          success: false,
-          authorization_url: null,
-          reference: null,
-          amount: null,
-          message: null,
-          error: 'Minimum sponsorship amount is 49 KES'
-        };
-      }
+      // if (amount < 49) {
+      //   return {
+      //     success: false,
+      //     authorization_url: null,
+      //     reference: null,
+      //     amount: null,
+      //     message: null,
+      //     error: 'Minimum sponsorship amount is 49 KES'
+      //   };
+      // }
 
       // Generate unique reference
       const reference = `graphql_sponsor_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
