@@ -8,7 +8,7 @@ import Interests from '@/components/ui/interests';
 import Certifications from '../components/ui/certifications';
 import Blogs from '../components/ui/blogs';
 import Footer from '../components/ui/footer';
-import profilepic from '../assets/barack.jpeg';
+import profilepic from '../assets/image.png';
 
 export default function HomePage({ portfolioData }) {
     if (!portfolioData) {
