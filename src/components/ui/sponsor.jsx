@@ -44,7 +44,7 @@ const SponsorModal = ({ isOpen, onClose, onSponsor }) => {
       // Initialize Paystack payment
       const handler = window.PaystackPop.setup({
         key: import.meta.env.VITE_PAYSTACK_PUBLIC_KEY || 'pk_test_your_paystack_key_here',
-        email: import.meta.env.VITE_SPONSOR_EMAIL || 'barack.ouma@example.com', 
+        email: import.meta.env.VITE_SPONSOR_EMAIL || 'fidel.castro@example.com', 
         amount: amount * 100, 
         currency: 'KES',
         ref: `sponsor_${Date.now()}`,

@@ -6,12 +6,10 @@ import * as path from 'path';
 
 const exec = promisify(execCallback);
 
-// Command response types
 export type CommandResponse = 
   | { type: 'output'; output: string; prompt?: string }
   | { type: 'cd'; output: string; newDir: string; prompt?: string };
 
-// Available commands
 type CommandHandler = (args: string[], cwd: string, env: NodeJS.ProcessEnv) => Promise<CommandResponse>;
 
 const commands: Record<string, CommandHandler> = {
@@ -68,7 +66,7 @@ Contact Information:
 
   clear: async () => ({
     type: 'output',
-    output: '\x1B[2J\x1B[3J\x1B[H', // ANSI escape codes to clear screen
+    output: '\x1B[2J\x1B[3J\x1B[H',
     prompt: ''
   }),
 
@@ -78,14 +76,12 @@ Contact Information:
     prompt: ''
   }),
 
-  // Built-in commands that interact with the file system
   ls: async (args, cwd) => {
     try {
       const target = args[0] || '.';
       const targetPath = path.isAbsolute(target) ? target : path.join(cwd, target);
       const files = await fs.readdir(targetPath);
-      
-      // Get file stats for each file
+
       const fileStats = await Promise.all(
         files.map(async (file) => {
           const filePath = path.join(targetPath, file);
@@ -93,8 +89,7 @@ Contact Information:
           return { file, isDir: stats.isDirectory() };
         })
       );
-      
-      // Format output with colors for directories
+
       const output = fileStats
         .map(({ file, isDir }) => {
           return isDir ? `\x1b[34m${file}\x1b[0m/` : file;
@@ -112,7 +107,7 @@ Contact Information:
 
   cd: async (args, cwd) => {
     if (!args[0]) {
-      // No arguments, go to home directory
+
       const homeDir = process.env.HOME || '/';
       return { 
         type: 'cd', 

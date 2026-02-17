@@ -9,6 +9,7 @@ const Projects = ({ items }) => (
                 <div key={project.id} className="border-b border-gray-700 pb-4 last:border-b-0">
                     <h4 className="font-semibold text-[#c3b79d]">{project.name}</h4>
                     <p className="text-sm text-gray-300 mt-1">{project.description}</p>
+                    <p className="text-sm text-gray-300 mt-1">{project.tags?.map(tag => tag).join(', ')}</p>
                     <div className="mt-3 flex flex-wrap gap-2">
                         {project.tags?.map((tag) => (
                             <Badge key={tag} variant="secondary" className="bg-gray-700 text-gray-300 text-xs">{tag}</Badge>
