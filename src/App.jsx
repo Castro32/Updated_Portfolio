@@ -3022,7 +3022,7 @@ const mockPortfolioData = {
   "about_me": "I'm a dedicated developer who loves creating efficient, scalable solutions and learning new technologies, with a strong background in e-commerce and digital marketing platforms. My current work extends to providing comprehensive website maintenance and targeted marketing newsletters for clients, ensuring their online presence is robust and engaging.", // Updated 'about_me' to include new info
   "contact": {
     "email": "okanga.fidel@gmail.com",
-    "twitter": "https://x.com/castro_okanga",
+    //"twitter": "https://x.com/castro_okanga",
     "github": "https://github.com/Castro32",
     "linkedin": "https://www.linkedin.com/in/fidel-castro-0ab8bb239/",
     "location": "Nairobi County, Kenya",
