@@ -3778,7 +3778,8 @@ import BlogsPage from '@/components/ui/blogs';
 import TerminalPage from './pages/terminal.jsx';
 import TerminalWS from './components/terminal/TerminalWS';
 import InterestsPage from '@/components/ui/interests';
-import BlogDetailPage from "./pages/BlogPageDetail.jsx"        
+import BlogDetailPage from "./pages/BlogPageDetail.jsx"
+import WhatsAppButton from "./pages/WhatsappButton.jsx";
 import TerminalPaymentCallback from './pages/terminal-payment-callback.jsx';
 import { Button } from '@/components/ui/button';
 import resumePDF from "./assets/Fidel_Castro_CV (7).pdf";
@@ -3797,7 +3798,7 @@ const handleResumeClick = () => {
 
 const mockPortfolioData = {
   "name": "Fidel Castro",
-  "title": "Full Stack Developer | Marketing Specialist",
+  "title": "Full Stack Developer | Email Marketing Specialist",
   "profile_picture_url": "",
   "bio": "Passionate full-stack developer with expertise in modern web technologies and a keen eye for marketing strategies. I currently provide website maintenance and marketing newsletter services for clients like Grounded.co.ke and CanvasCosmetic.com, leveraging my strong background in WordPress and WooCommerce.",
   "about_me": "I'm a dedicated developer who loves creating efficient, scalable solutions and learning new technologies, with a strong background in e-commerce and digital marketing platforms. My current work extends to providing comprehensive website maintenance and targeted marketing newsletters for clients, ensuring their online presence is robust and engaging.",
@@ -3816,7 +3817,7 @@ const mockPortfolioData = {
       "url": "https://fidel-castro-portfolio.vercel.app/blog/wordpress-vs-framer",
       "published_date": "Aug 20, 2025",
       "read_time": 10,
-      "platform": "Dev.to",
+      "platform": "",
       "tags": ["WordPress", "Framer", "Website Builder", "CMS", "Web Design"]
     },
     {
@@ -3826,7 +3827,7 @@ const mockPortfolioData = {
       "url": "https://fidel-castro-portfolio.vercel.app/blog/woocommerce-vs-shopify",
       "published_date": "Aug 25, 2025",
       "read_time": 12,
-      "platform": "Medium",
+      "platform": "",
       "tags": ["WooCommerce", "Shopify", "E-commerce", "Online Store", "Business"]
     },
     {
@@ -3836,7 +3837,7 @@ const mockPortfolioData = {
       "url": "https://fidel-castro-portfolio.vercel.app/blog/react-typescript-scalable",
       "published_date": "Dec 15, 2024",
       "read_time": 8,
-      "platform": "Kodaschool",
+      "platform": "",
       "tags": ["React", "TypeScript", "Architecture", "Performance"]
     },
     {
@@ -3846,47 +3847,47 @@ const mockPortfolioData = {
       "url": "https://fidel-castro-portfolio.vercel.app/blog/aws-lambda-guide",
       "published_date": "Nov 28, 2024",
       "read_time": 12,
-      "platform": "Kodaschool",
+      "platform": "",
       "tags": ["AWS", "Lambda", "Serverless", "Node.js"]
     },
     {
       "id": generateUniqueId(),
       "title": "How to Seamlessly Roll Auth into Your React App using Firebase Authentication",
       "description": "Learn how to implement production-ready authentication in minutes with Firebase, eliminating the need to build auth servers from scratch.",
-      "url": "https://kodaschool.com/blog/how-to-seamlessly-roll-auth-into-your-react-app-using-firebase-authentication",
+      "url": "https://fidel-castro-portfolio.vercel.app/blog/how-to-seamlessly-roll-auth-into-your-react-app-using-firebase-authentication",
       "published_date": "Jul 15, 2025",
       "read_time": 8,
-      "platform": "Kodaschool",
+      "platform": "",
       "tags": ["React", "Firebase", "Authentication", "BaaS"]
     },
     {
       "id": generateUniqueId(),
       "title": "What is Inversion of Control?",
       "description": "Exploring how IoC flips traditional program structure to create more testable and maintainable code in Node.js applications.",
-      "url": "https://kodaschool.com/blog/inversion-of-control",
+      "url": "https://fidel-castro-portfolio.vercel.app/blog/inversion-of-control",
       "published_date": "Jul 10, 2025",
       "read_time": 10,
-      "platform": "Kodaschool",
+      "platform": "",
       "tags": ["Node.js", "Dependency Injection", "Testing", "Architecture"]
     },
     {
       "id": generateUniqueId(),
       "title": "Master Any Framework: The Mindset Shift That Actually Works",
       "description": "The secret sauce big teams use to adopt NestJS, Spring, or GraphQL quickly and wield new languages confidently.",
-      "url": "https://dev.to/isodevmate/master-any-framework-the-mindset-shift-that-actually-works-1234",
+      "url": "https://fidel-castro-portfolio.vercel.app/blog/master-any-framework-the-mindset-shift-that-actually-works",
       "published_date": "Jul 8, 2025",
       "read_time": 12,
-      "platform": "Dev.to",
+      "platform": "",
       "tags": ["Learning", "Frameworks", "NestJS", "Spring"]
     },
     {
       "id": generateUniqueId(),
       "title": "MPesa Daraja 2.0 + tRPC",
       "description": "A type-safe alternative to integrate with Daraja 2.0 that simplifies STK push, reduces bugs, and improves developer experience.",
-      "url": "https://kodaschool.com/blog/Intergration-mpesa-daraja-and-daraja-2.0",
+      "url": "https://fidel-castro-portfolio.vercel.app/blog/intergration-mpesa-daraja-and-daraja-2.0",
       "published_date": "Mar 10, 2025",
       "read_time": 15,
-      "platform": "Kodaschool",
+      "platform": "",
       "tags": ["MPesa", "tRPC", "Payments", "TypeScript"]
     },
     {
@@ -3896,7 +3897,7 @@ const mockPortfolioData = {
       "url": "https://fidel-castro-portfolio.vercel.app/blog/iot-react-firebase",
       "published_date": "Oct 22, 2024",
       "read_time": 10,
-      "platform": "Medium",
+      "platform": "",
       "tags": ["IoT", "React", "Firebase", "Smart Systems"]
     },
     {
@@ -3906,7 +3907,7 @@ const mockPortfolioData = {
       "url": "https://fidel-castro-portfolio.vercel.app/blog/graphql-practical-guide",
       "published_date": "Sep 10, 2024",
       "read_time": 15,
-      "platform": "Medium",
+      "platform": "",
       "tags": ["GraphQL", "API Design", "Apollo", "Backend"]
     }
   ],
@@ -4501,6 +4502,7 @@ function App() {
 
       <Router>
         <AppContent />
+        <WhatsAppButton />
       </Router>
     </>
   );
