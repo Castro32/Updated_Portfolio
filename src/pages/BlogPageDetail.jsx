@@ -8,7 +8,7 @@ const BLOG_CONTENT = {
   'wordpress-vs-framer': {
     title: 'WordPress vs. Framer: Choosing the Right Platform for Your Website',
     platform: 'Dev.to',
-    published_date: 'Aug 20, 2025',
+    published_date: 'Mar 10, 2026',
     read_time: 10,
     tags: ['WordPress', 'Framer', 'Website Builder', 'CMS', 'Web Design'],
     sections: [
@@ -62,13 +62,13 @@ const BLOG_CONTENT = {
   'woocommerce-vs-shopify': {
     title: 'WooCommerce vs. Shopify: A Head-to-Head for E-commerce Success',
     platform: 'Medium',
-    published_date: 'Aug 25, 2025',
+    published_date: 'Feb 18, 2026',
     read_time: 12,
     tags: ['WooCommerce', 'Shopify', 'E-commerce', 'Online Store', 'Business'],
     sections: [
       {
         heading: 'Introduction',
-        body: `If you're launching an online store in 2025, chances are you've already heard of both WooCommerce and Shopify. Together they power a huge slice of global e-commerce. But they represent fundamentally different philosophies: WooCommerce is open-source, self-hosted, and infinitely customisable; Shopify is a closed, hosted platform that prioritises simplicity and speed-to-launch. This article breaks down which is the better fit for your business.`,
+        body: `If you're launching an online store in 2026, chances are you've already heard of both WooCommerce and Shopify. Together they power a huge slice of global e-commerce. But they represent fundamentally different philosophies: WooCommerce is open-source, self-hosted, and infinitely customisable; Shopify is a closed, hosted platform that prioritises simplicity and speed-to-launch. This article breaks down which is the better fit for your business.`,
       },
       {
         heading: 'Platform Overview',
@@ -116,7 +116,7 @@ const BLOG_CONTENT = {
   'react-typescript-scalable': {
     title: 'Building Scalable React Applications with TypeScript',
     platform: 'Kodaschool',
-    published_date: 'Dec 15, 2024',
+    published_date: 'Medium',
     read_time: 8,
     tags: ['React', 'TypeScript', 'Architecture', 'Performance'],
     sections: [
@@ -154,7 +154,7 @@ const BLOG_CONTENT = {
   'aws-lambda-guide': {
     title: 'AWS Lambda Functions: From Zero to Production',
     platform: 'Kodaschool',
-    published_date: 'Nov 28, 2024',
+    published_date: 'Nov 28, 2025',
     read_time: 12,
     tags: ['AWS', 'Lambda', 'Serverless', 'Node.js'],
     sections: [
@@ -200,7 +200,7 @@ const BLOG_CONTENT = {
   'iot-react-firebase': {
     title: 'The Future of IoT: Building Smart Systems with React and Firebase',
     platform: 'Medium',
-    published_date: 'Oct 22, 2024',
+    published_date: 'Oct 22, 2025',
     read_time: 10,
     tags: ['IoT', 'React', 'Firebase', 'Smart Systems'],
     sections: [
@@ -242,7 +242,7 @@ const BLOG_CONTENT = {
   'graphql-practical-guide': {
     title: 'Understanding GraphQL: A Practical Approach',
     platform: 'Medium',
-    published_date: 'Sep 10, 2024',
+    published_date: 'Sep 10, 2025',
     read_time: 15,
     tags: ['GraphQL', 'API Design', 'Apollo', 'Backend'],
     sections: [

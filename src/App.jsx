@@ -4556,7 +4556,7 @@ const mockPortfolioData = {
       "title": "WordPress vs. Framer: Choosing the Right Platform for Your Website",
       "description": "A comparative analysis of WordPress and Framer, exploring their strengths, weaknesses, and ideal use cases for different types of websites, from blogs to complex interactive experiences.",
       "url": "https://castro.mabcaslabs.com/blog/wordpress-vs-framer",
-      "published_date": "Aug 20, 2025",
+      "published_date": "Mar 10, 2026",
       "read_time": 10,
       "platform": "",
       "tags": ["WordPress", "Framer", "Website Builder", "CMS", "Web Design"]
@@ -4566,7 +4566,7 @@ const mockPortfolioData = {
       "title": "WooCommerce vs. Shopify: A Head-to-Head for E-commerce Success",
       "description": "Deep dive into WooCommerce and Shopify, comparing features, scalability, pricing, and customization options to help businesses decide which e-commerce platform best suits their needs.",
       "url": "https://castro.mabcaslabs.com/blog/woocommerce-vs-shopify",
-      "published_date": "Aug 25, 2025",
+      "published_date": "Feb 18, 2026",
       "read_time": 12,
       "platform": "",
       "tags": ["WooCommerce", "Shopify", "E-commerce", "Online Store", "Business"]
@@ -4576,7 +4576,7 @@ const mockPortfolioData = {
       "title": "Building Scalable React Applications with TypeScript",
       "description": "Learn how to structure large-scale React applications using TypeScript, exploring advanced patterns, best practices, and performance optimization techniques that I've learned from building production applications.",
       "url": "https://castro.mabcaslabs.com/blog/react-typescript-scalable",
-      "published_date": "Dec 15, 2024",
+      "published_date": "Dec 15, 2025",
       "read_time": 8,
       "platform": "",
       "tags": ["React", "TypeScript", "Architecture", "Performance"]
@@ -4586,7 +4586,7 @@ const mockPortfolioData = {
       "title": "AWS Lambda Functions: From Zero to Production",
       "description": "A comprehensive guide to building, deploying, and monitoring AWS Lambda functions. Covers everything from basic setup to advanced patterns like event-driven architecture and cold start optimization.",
       "url": "https://castro.mabcaslabs.com/blog/aws-lambda-guide",
-      "published_date": "Nov 28, 2024",
+      "published_date": "Nov 28, 2025",
       "read_time": 12,
       "platform": "",
       "tags": ["AWS", "Lambda", "Serverless", "Node.js"]
@@ -4596,7 +4596,7 @@ const mockPortfolioData = {
       "title": "How to Seamlessly Roll Auth into Your React App using Firebase Authentication",
       "description": "Learn how to implement production-ready authentication in minutes with Firebase, eliminating the need to build auth servers from scratch.",
       "url": "https://castro.mabcaslabs.com/blog/how-to-seamlessly-roll-auth-into-your-react-app-using-firebase-authentication",
-      "published_date": "Jul 15, 2025",
+      "published_date": "Oct 22, 2025",
       "read_time": 8,
       "platform": "",
       "tags": ["React", "Firebase", "Authentication", "BaaS"]
@@ -4606,7 +4606,7 @@ const mockPortfolioData = {
       "title": "What is Inversion of Control?",
       "description": "Exploring how IoC flips traditional program structure to create more testable and maintainable code in Node.js applications.",
       "url": "https://castro.mabcaslabs.com/blog/inversion-of-control",
-      "published_date": "Jul 10, 2025",
+      "published_date": "Oct 1, 2025",
       "read_time": 10,
       "platform": "",
       "tags": ["Node.js", "Dependency Injection", "Testing", "Architecture"]
@@ -4616,7 +4616,7 @@ const mockPortfolioData = {
       "title": "Master Any Framework: The Mindset Shift That Actually Works",
       "description": "The secret sauce big teams use to adopt NestJS, Spring, or GraphQL quickly and wield new languages confidently.",
       "url": "https://castro.mabcaslabs.com/blog/master-any-framework-the-mindset-shift-that-actually-works",
-      "published_date": "Jul 8, 2025",
+      "published_date": "Sep 8, 2025",
       "read_time": 12,
       "platform": "",
       "tags": ["Learning", "Frameworks", "NestJS", "Spring"]
@@ -4626,7 +4626,7 @@ const mockPortfolioData = {
       "title": "MPesa Daraja 2.0 + tRPC",
       "description": "A type-safe alternative to integrate with Daraja 2.0 that simplifies STK push, reduces bugs, and improves developer experience.",
       "url": "https://castro.mabcaslabs.com/blog/intergration-mpesa-daraja-and-daraja-2.0",
-      "published_date": "Mar 10, 2025",
+      "published_date": "Dec 27, 2025",
       "read_time": 15,
       "platform": "",
       "tags": ["MPesa", "tRPC", "Payments", "TypeScript"]
@@ -4636,7 +4636,7 @@ const mockPortfolioData = {
       "title": "The Future of IoT: Building Smart Systems with React and Firebase",
       "description": "Exploring how modern web technologies can be used to create intuitive dashboards for IoT devices. Real-world examples from my experience building smart fragrance systems.",
       "url": "https://castro.mabcaslabs.com/blog/iot-react-firebase",
-      "published_date": "Oct 22, 2024",
+      "published_date": "Oct 22, 2025",
       "read_time": 10,
       "platform": "",
       "tags": ["IoT", "React", "Firebase", "Smart Systems"]
@@ -4646,7 +4646,7 @@ const mockPortfolioData = {
       "title": "Understanding GraphQL: A Practical Approach",
       "description": "Deep dive into GraphQL fundamentals, from basic queries to advanced schema design. Includes practical examples and performance considerations for production applications.",
       "url": "https://castro.mabcaslabs.com/blog/graphql-practical-guide",
-      "published_date": "Sep 10, 2024",
+      "published_date": "Oct 5, 2025",
       "read_time": 15,
       "platform": "",
       "tags": ["GraphQL", "API Design", "Apollo", "Backend"]
