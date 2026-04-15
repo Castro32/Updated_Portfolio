@@ -6296,7 +6296,7 @@ const mockPortfolioData = {
       "id": generateUniqueId(),
       "name": "National Cargo Tracking System",
       "description": "A comprehensive end-to-end cargo tracking platform built with React and Material UI. The system includes modules for driver management, cargo carrier management, real-time cargo tracking, and journey management. Implemented real-time GPS location updates via WebSockets for live container monitoring across national routes. Integrated RESTful APIs for seamless data flow, built dynamic data mapping, and full CRUD functionality across all modules. Features include downloadable journey reports as PDF for record-keeping and audit purposes. Optimized for performance and responsiveness across both field and office devices.",
-      "website_link": "https://ects.keshiholdings.com/",
+      // "website_link": "https://ects.keshiholdings.com/",
       "tags": ["React", "Material UI", "WebSockets", "REST APIs", "Real-time Tracking", "GPS", "PDF Reports", "Logistics", "Performance Optimization"]
     },
     {
