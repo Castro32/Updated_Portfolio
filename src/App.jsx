@@ -1031,7 +1031,7 @@ const mockPortfolioData = {
       "id": generateUniqueId(),
       "name": "Milliden Gardens Resort",
       "description": "A modern resort website designed to showcase hospitality services while enabling seamless online booking. The platform allows guests to explore amenities, view available services, and make reservations with ease. It features an integrated booking system that automatically sends email notifications to both the admin and customers, ensuring efficient reservation management and communication. Built with a focus on user experience, accessibility, and reliability.",
-      "website_link": "https://milliden-gardens-makeover.vercel.app",
+      "website_link": "https://www.millidengardens.co.ke",
       "tags": ["Web Development", "Booking System", "UI/UX", "Email Integration", "Hospitality"]
     },
     {
