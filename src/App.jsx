@@ -1014,76 +1014,175 @@ const mockPortfolioData = {
     },
   ],
   "projects": [
-    {
-      "id": generateUniqueId(),
-      "name": "National Cargo Tracking System",
-      "description": "A comprehensive end-to-end cargo tracking platform built with React and Material UI. The system includes modules for driver management, cargo carrier management, real-time cargo tracking, and journey management. Implemented real-time GPS location updates via WebSockets for live container monitoring across national routes. Integrated RESTful APIs for seamless data flow, built dynamic data mapping, and full CRUD functionality across all modules. Features include downloadable journey reports as PDF for record-keeping and audit purposes. Optimized for performance and responsiveness across both field and office devices.",
-      "tags": ["React", "Material UI", "WebSockets", "REST APIs", "Real-time Tracking", "GPS", "PDF Reports", "Logistics", "Performance Optimization"]
-    },
-    {
-      "id": generateUniqueId(),
-      "name": "Jay-B Fitness & Performance",
-      "description": "A full-stack fitness and performance platform designed to deliver personalized training programs, nutrition guidance, and wellness resources. The platform provides an intuitive user experience for exploring workouts, booking sessions, and tracking fitness progress. It features a subscription-based system with seamless M-Pesa integration for secure payments, alongside an e-commerce module that allows users to purchase gym wear and fitness merchandise. Built with a focus on performance, scalability, and user engagement.",
-      "website_link": "https://jay-b-fitness.vercel.app",
-      "tags": ["Web Development", "Fitness Platform", "UI/UX", "E-commerce", "M-Pesa Integration", "Full-Stack"]
-    },
-    {
-      "id": generateUniqueId(),
-      "name": "Milliden Gardens Resort",
-      "description": "A modern resort website designed to showcase hospitality services while enabling seamless online booking. The platform allows guests to explore amenities, view available services, and make reservations with ease. It features an integrated booking system that automatically sends email notifications to both the admin and customers, ensuring efficient reservation management and communication. Built with a focus on user experience, accessibility, and reliability.",
-      "website_link": "https://www.millidengardens.co.ke",
-      "tags": ["Web Development", "Booking System", "UI/UX", "Email Integration", "Hospitality"]
-    },
-    {
-      "id": generateUniqueId(),
-      "name": "Avya Beauty Salon",
-      "description": "A modern beauty and wellness platform that connects clients with salon services through easy online booking, service browsing, and appointment management. It offers a seamless user experience for discovering treatments, scheduling visits, and staying updated with salon offers and trends.",
-      "website_link": "https://avyabeauty.com",
-      "tags": ["Web Development", "Booking System", "UI/UX"]
-    },
-    {
-      "id": generateUniqueId(),
-      "name": "Organic Bloom",
-      "description": "A full-featured eCommerce platform for selling organic and health products, offering smooth online shopping with M-Pesa STK Push payments. It includes order tracking, inventory management, and an easy-to-use interface for customers to browse, purchase, and monitor their orders in real time.",
-      "website_link": "https://organicbloom.co.ke/",
-      "tags": ["E-commerce", "M-Pesa", "Payment Integration", "Inventory Management", "React", "Next.js"]
-    },
-    {
-      "id": generateUniqueId(),
-      "name": "EMS Market Mall",
-      "description": "A website for an upcoming shopping mall located in Lavington, Nairobi, Kenya. The platform showcases the mall, its shops, and services, providing visitors with information about available spaces, stores, and updates as the mall prepares for launch.",
-      "website_link": "https://www.emsmarket.co.ke/",
-      "tags": ["Web Development", "Real Estate", "Marketing Site"]
-    },
-    {
-      "id": generateUniqueId(),
-      "name": "Quiet Empire Podcast",
-      "description": "A podcast website dedicated to sharing inspiring stories and insights from various guests. The platform features episodes, show notes, and subscription options, allowing listeners to easily access and engage with the content.",
-      "website_link": "https://quietempirepodcast.com/",
-      "tags": ["Web Development", "Podcast Platform", "Content Management"]
-    },
-    {
-      "id": generateUniqueId(),
-      "name": "Portfolio Terminal",
-      "description": "Interactive terminal-style portfolio with GUI/CLI modes, showcasing projects, skills, and experience through a developer-first interface.",
-      "website_link": "https://better-portfolio-pi.vercel.app",
-      "tags": ["React", "Terminal", "Animation", "Portfolio", "CLI", "UI/UX"]
-    },
-    {
-      "id": generateUniqueId(),
-      "name": "Grounded.co.ke — Maintenance & Marketing",
-      "description": "Ongoing website maintenance, content updates, and marketing newsletter management for an e-commerce store built on WordPress and WooCommerce, ensuring optimal performance and consistent customer engagement.",
-      "website_link": "https://grounded.co.ke/",
-      "tags": ["WordPress", "WooCommerce", "Website Maintenance", "Digital Marketing", "Newsletter Management", "E-commerce"]
-    },
-    {
-      "id": generateUniqueId(),
-      "name": "Canvas Cosmetic — Maintenance & Marketing",
-      "description": "Comprehensive website maintenance and targeted marketing newsletters for a cosmetics e-commerce brand, leveraging WordPress and WooCommerce to enhance user experience and drive sales.",
-      "website_link": "https://www.canvascosmetic.com/",
-      "tags": ["WordPress", "WooCommerce", "Website Maintenance", "Digital Marketing", "Newsletter Management", "E-commerce"]
-    }
-  ],
+  {
+    "id": generateUniqueId(),
+    "name": "National Cargo Tracking System",
+    "description": "A comprehensive end-to-end cargo tracking platform built with React and Material UI. The system includes modules for driver management, cargo carrier management, real-time cargo tracking, and journey management. Implemented real-time GPS location updates via WebSockets for live container monitoring across national routes. Integrated RESTful APIs for seamless data flow, built dynamic data mapping, and full CRUD functionality across all modules. Features include downloadable journey reports as PDF for record-keeping and audit purposes. Optimized for performance and responsiveness across both field and office devices.",
+    "tags": ["React", "Material UI", "WebSockets", "REST APIs", "Real-time Tracking", "GPS", "PDF Reports", "Logistics", "Performance Optimization"]
+  },
+  {
+    "id": generateUniqueId(),
+    "name": "Juganhub Electronics",
+    "description": "A full-featured e-commerce platform for Juganhub Technologies, a Nairobi-based tech retailer stocking brand new and refurbished smartphones, tablets, TVs, laptops, soundbars, and home appliances. Built on WordPress and WooCommerce, the store supports product variants, wishlist and comparison features, WhatsApp-based customer support, and multiple product categories spanning consumer electronics and household devices.",
+    "website_link": "https://juganhub.co.ke",
+    "tags": ["WordPress", "WooCommerce", "E-commerce", "Electronics", "Retail"]
+  },
+  {
+    "id": generateUniqueId(),
+    "name": "Powershift",
+    "description": "A digital platform for Power Shift, a global community helping women leaders, influencers, and entrepreneurs scale beyond six figures. The site serves as the hub for the brand's coaching programs, community membership, events, and digital products — built to reflect a premium, growth-focused brand identity for a UAE-based women's business network.",
+    "website_link": "https://www.powershift.ae",
+    "tags": ["React", "Node.js", "Stripe", "Cloudinary", "Women Entrepreneurs", "Community Platform"]
+  },
+  {
+    "id": generateUniqueId(),
+    "name": "Jay-B Fitness & Performance",
+    "description": "A fitness platform for a Nairobi-based personal trainer offering personalized weight loss plans, muscle building programs, and outdoor training experiences. The site showcases services, enables session bookings, and features a subscription system with M-Pesa payment integration — built to convert visitors into clients with a clean, results-focused design.",
+    "website_link": "https://jay-b-fitness.vercel.app",
+    "tags": ["Web Development", "Fitness Platform", "UI/UX", "E-commerce", "M-Pesa Integration", "Full-Stack"]
+  },
+  {
+    "id": generateUniqueId(),
+    "name": "Milliden Gardens Resort",
+    "description": "A luxury hotel and retreat website for Milliden Gardens, located in Rodi, Homa-Bay, Kenya. The platform presents the property as a sanctuary of refined living, allowing guests to explore executive and standard room offerings, fine dining, and garden retreat experiences. Features an integrated booking system with automated email notifications to both admin and guests for seamless reservation management.",
+    "website_link": "https://www.millidengardens.co.ke",
+    "tags": ["Web Development", "Booking System", "UI/UX", "Email Integration", "Hospitality"]
+  },
+  {
+    "id": generateUniqueId(),
+    "name": "Avya Beauty Salon",
+    "description": "A premium beauty and skincare platform for AVYA, a science-led salon based in Nairobi, Kenya. The site positions the brand under the tagline 'Where Science Meets Beauty', letting clients explore treatments, book appointments, and stay up to date with salon offers — built with a clean, aspirational aesthetic that reflects the brand's premium positioning.",
+    "website_link": "https://avyabeauty.com",
+    "tags": ["Web Development", "Booking System", "UI/UX"]
+  },
+  {
+    "id": generateUniqueId(),
+    "name": "Organic Bloom",
+    "description": "A full-featured e-commerce platform for Organic Bloom, a Nairobi-based retailer of premium organic and natural health products. The store supports smooth product browsing, M-Pesa STK Push payments, real-time order tracking, and inventory management — built to deliver a reliable, mobile-first shopping experience for health-conscious Kenyan consumers.",
+    "website_link": "https://organicbloom.co.ke/",
+    "tags": ["E-commerce", "M-Pesa", "Payment Integration", "Inventory Management", "React", "Next.js"]
+  },
+  {
+    "id": generateUniqueId(),
+    "name": "EMS Market Mall",
+    "description": "A coming-soon landing page for EMS Market, an upcoming shopping mall in Lavington, Nairobi. The page establishes the brand's online presence ahead of launch, building anticipation for the mall's retail spaces and tenants.",
+    "website_link": "https://www.emsmarket.co.ke/",
+    "tags": ["Web Development", "Real Estate", "Marketing Site"]
+  },
+  {
+    "id": generateUniqueId(),
+    "name": "Quiet Empire Podcast",
+    "description": "A podcast website built to host episodes, show notes, and subscription options for a show sharing inspiring stories and insights from diverse guests. Designed to give listeners easy access to content and enable ongoing audience engagement.",
+    "website_link": "https://quietempirepodcast.com/",
+    "tags": ["Web Development", "Podcast Platform", "Content Management"]
+  },
+  {
+    "id": generateUniqueId(),
+    "name": "Portfolio Terminal",
+    "description": "Interactive terminal-style portfolio with GUI/CLI modes, showcasing projects, skills, and experience through a developer-first interface.",
+    "website_link": "https://better-portfolio-pi.vercel.app",
+    "tags": ["React", "Terminal", "Animation", "Portfolio", "CLI", "UI/UX"]
+  },
+  {
+    "id": generateUniqueId(),
+    "name": "Grounded.co.ke — Maintenance & Marketing",
+    "description": "Ongoing website maintenance and email marketing for Grounded, a B-Corp certified, women-run Kenyan brand producing 50+ non-toxic home and personal care products — including laundry, dish soap, body care, and baby ranges — from African-grown ingredients in a solar-powered Nairobi factory. Available across 170+ retail outlets in East Africa and distributed internationally. The store runs on Shopify.",
+    "website_link": "https://grounded.co.ke/",
+    "tags": ["Shopify", "Website Maintenance", "Digital Marketing", "Newsletter Management", "E-commerce"]
+  },
+  {
+    "id": generateUniqueId(),
+    "name": "Canvas Cosmetic — Maintenance & Marketing",
+    "description": "Comprehensive website maintenance and targeted email marketing for Canvas Cosmetics, a vegan, cruelty-free premium makeup brand shipping to Kenya, UAE, and UK. The WooCommerce store carries foundations, concealers, pressed powders, matte liquid lipsticks, lip liners, gloss balm duos, eyeshadow palettes, mascaras, and makeup tools — all designed for every complexion.",
+    "website_link": "https://www.canvascosmetic.com/",
+    "tags": ["WordPress", "WooCommerce", "Website Maintenance", "Digital Marketing", "Newsletter Management", "E-commerce"]
+  }
+],
+  // "projects": [
+  //   {
+  //     "id": generateUniqueId(),
+  //     "name": "National Cargo Tracking System",
+  //     "description": "A comprehensive end-to-end cargo tracking platform built with React and Material UI. The system includes modules for driver management, cargo carrier management, real-time cargo tracking, and journey management. Implemented real-time GPS location updates via WebSockets for live container monitoring across national routes. Integrated RESTful APIs for seamless data flow, built dynamic data mapping, and full CRUD functionality across all modules. Features include downloadable journey reports as PDF for record-keeping and audit purposes. Optimized for performance and responsiveness across both field and office devices.",
+  //     "tags": ["React", "Material UI", "WebSockets", "REST APIs", "Real-time Tracking", "GPS", "PDF Reports", "Logistics", "Performance Optimization"]
+  //   },
+  //   {
+  //     "id": generateUniqueId(),
+  //     "name": "Juganhub Electronics",
+  //     "description": "A full-stack e-commerce platform for selling electronics, featuring a responsive Wordpress theme and a robust WooCommerce backend. The system includes product catalog management, shopping cart functionality, secure checkout with M-Pesa integration, and order tracking. Implemented real-time inventory updates and dynamic pricing features. The platform is optimized for performance, SEO, and user experience across devices.",
+  //     "website_link": "https://juganhub.co.ke",
+  //     "tags": ["React", "Material UI", "WebSockets", "REST APIs", "Real-time Tracking", "GPS", "PDF Reports", "Logistics", "Performance Optimization"]
+  //   },
+  //   {
+  //     "id": generateUniqueId(),
+  //     "name": "Powershift",
+  //     "description": "Power Shift is a global community for leaders, influencers, and changemakers ready to spark real growth. It's where mindfulness meets brand building, and where innovation creates lasting wealth and impact.",
+  //     "website_link": "https://www.powershift.ae",
+  //     "tags": ["React", "Material UI", "WebSockets", "REST APIs", "Real-time Tracking", "GPS", "PDF Reports", "Logistics", "Performance Optimization"]
+  //   },
+  //   {
+  //     "id": generateUniqueId(),
+  //     "name": "Jay-B Fitness & Performance",
+  //     "description": "A full-stack fitness and performance platform designed to deliver personalized training programs, nutrition guidance, and wellness resources. The platform provides an intuitive user experience for exploring workouts, booking sessions, and tracking fitness progress. It features a subscription-based system with seamless M-Pesa integration for secure payments, alongside an e-commerce module that allows users to purchase gym wear and fitness merchandise. Built with a focus on performance, scalability, and user engagement.",
+  //     "website_link": "https://jay-b-fitness.vercel.app",
+  //     "tags": ["Web Development", "Fitness Platform", "UI/UX", "E-commerce", "M-Pesa Integration", "Full-Stack"]
+  //   },
+  //   {
+  //     "id": generateUniqueId(),
+  //     "name": "Milliden Gardens Resort",
+  //     "description": "A modern resort website designed to showcase hospitality services while enabling seamless online booking. The platform allows guests to explore amenities, view available services, and make reservations with ease. It features an integrated booking system that automatically sends email notifications to both the admin and customers, ensuring efficient reservation management and communication. Built with a focus on user experience, accessibility, and reliability.",
+  //     "website_link": "https://www.millidengardens.co.ke",
+  //     "tags": ["Web Development", "Booking System", "UI/UX", "Email Integration", "Hospitality"]
+  //   },
+  //   {
+  //     "id": generateUniqueId(),
+  //     "name": "Avya Beauty Salon",
+  //     "description": "A modern beauty and wellness platform that connects clients with salon services through easy online booking, service browsing, and appointment management. It offers a seamless user experience for discovering treatments, scheduling visits, and staying updated with salon offers and trends.",
+  //     "website_link": "https://avyabeauty.com",
+  //     "tags": ["Web Development", "Booking System", "UI/UX"]
+  //   },
+  //   {
+  //     "id": generateUniqueId(),
+  //     "name": "Organic Bloom",
+  //     "description": "A full-featured eCommerce platform for selling organic and health products, offering smooth online shopping with M-Pesa STK Push payments. It includes order tracking, inventory management, and an easy-to-use interface for customers to browse, purchase, and monitor their orders in real time.",
+  //     "website_link": "https://organicbloom.co.ke/",
+  //     "tags": ["E-commerce", "M-Pesa", "Payment Integration", "Inventory Management", "React", "Next.js"]
+  //   },
+  //   {
+  //     "id": generateUniqueId(),
+  //     "name": "EMS Market Mall",
+  //     "description": "A website for an upcoming shopping mall located in Lavington, Nairobi, Kenya. The platform showcases the mall, its shops, and services, providing visitors with information about available spaces, stores, and updates as the mall prepares for launch.",
+  //     "website_link": "https://www.emsmarket.co.ke/",
+  //     "tags": ["Web Development", "Real Estate", "Marketing Site"]
+  //   },
+  //   {
+  //     "id": generateUniqueId(),
+  //     "name": "Quiet Empire Podcast",
+  //     "description": "A podcast website dedicated to sharing inspiring stories and insights from various guests. The platform features episodes, show notes, and subscription options, allowing listeners to easily access and engage with the content.",
+  //     "website_link": "https://quietempirepodcast.com/",
+  //     "tags": ["Web Development", "Podcast Platform", "Content Management"]
+  //   },
+  //   {
+  //     "id": generateUniqueId(),
+  //     "name": "Portfolio Terminal",
+  //     "description": "Interactive terminal-style portfolio with GUI/CLI modes, showcasing projects, skills, and experience through a developer-first interface.",
+  //     "website_link": "https://better-portfolio-pi.vercel.app",
+  //     "tags": ["React", "Terminal", "Animation", "Portfolio", "CLI", "UI/UX"]
+  //   },
+  //   {
+  //     "id": generateUniqueId(),
+  //     "name": "Grounded.co.ke — Maintenance & Marketing",
+  //     "description": "Ongoing website maintenance, content updates, and marketing newsletter management for an e-commerce store built on WordPress and WooCommerce, ensuring optimal performance and consistent customer engagement.",
+  //     "website_link": "https://grounded.co.ke/",
+  //     "tags": ["WordPress", "WooCommerce", "Website Maintenance", "Digital Marketing", "Newsletter Management", "E-commerce"]
+  //   },
+  //   {
+  //     "id": generateUniqueId(),
+  //     "name": "Canvas Cosmetic — Maintenance & Marketing",
+  //     "description": "Comprehensive website maintenance and targeted marketing newsletters for a cosmetics e-commerce brand, leveraging WordPress and WooCommerce to enhance user experience and drive sales.",
+  //     "website_link": "https://www.canvascosmetic.com/",
+  //     "tags": ["WordPress", "WooCommerce", "Website Maintenance", "Digital Marketing", "Newsletter Management", "E-commerce"]
+  //   }
+  // ],
   "skills": [
     {
       "category": "Frontend",
@@ -1226,137 +1325,300 @@ const MobileNavLink = React.memo(({ to, children, isActive }) => (
 
 // ─── Animated Header ──────────────────────────────────────────────────────────
 
+// const AnimatedHeader = React.memo(({ mode, onModeToggle }) => {
+//   const location = useLocation();
+//   const isHomePage = location.pathname === '/';
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+//   useEffect(() => {
+//     setIsMenuOpen(false);
+//   }, [location.pathname]);
+
+//   useEffect(() => {
+//     window.scrollTo({ top: 0, behavior: 'smooth' });
+//   }, [location.pathname]);
+
+//   return (
+//     <motion.header
+//       initial={{ y: -100, opacity: 0 }}
+//       animate={{ y: 0, opacity: 1 }}
+//       transition={{ duration: 0.6, ease: "easeOut" }}
+//       className="bg-card text-foreground p-4 sticky top-0 z-50 shadow-md border-b border-border"
+//     >
+//       <div className="mx-auto max-w-5xl flex justify-between items-center">
+
+//         {/* Logo */}
+//         <motion.div
+//           initial={{ x: -20, opacity: 0 }}
+//           animate={{ x: 0, opacity: 1 }}
+//           transition={{ delay: 0.3, duration: 0.5 }}
+//         >
+//           <Link to="/" className="block hover:opacity-80 transition-opacity duration-200">
+//             <img
+//               src={LOGO_URL}
+//               alt="Fidel Castro"
+//               style={{ height: '100px', width: 'auto', objectFit: 'contain', display: 'block' }}
+//             />
+//           </Link>
+//         </motion.div>
+
+//         {/* Desktop Nav */}
+//         <motion.nav
+//           initial={{ opacity: 0 }}
+//           animate={{ opacity: 1 }}
+//           transition={{ delay: 0.4, duration: 0.5 }}
+//           className="hidden md:flex items-center gap-6 text-sm"
+//         >
+//           <NavLink to="/" isActive={isHomePage}>Home</NavLink>
+//           <NavLink to="/blogs" isActive={location.pathname === '/blogs'}>Blogs</NavLink>
+//           <NavLink to="/interests" isActive={location.pathname === '/interests'}>Interests</NavLink>
+//         </motion.nav>
+
+//         {/* Right Actions */}
+//         <motion.div
+//           initial={{ x: 20, opacity: 0 }}
+//           animate={{ x: 0, opacity: 1 }}
+//           transition={{ delay: 0.3, duration: 0.5 }}
+//           className="flex items-center gap-3"
+//         >
+//           <a
+//             onClick={handleResumeClick}
+//             className="hidden md:flex items-center gap-2 px-4 py-2 rounded-lg border border-primary/20 hover:bg-primary/10 text-primary hover:text-foreground transition-colors duration-200 cursor-pointer"
+//           >
+//             <Download className="w-4 h-4" />
+//             <span>Resume</span>
+//           </a>
+
+//           <Button
+//             variant="outline"
+//             className="hidden lg:flex bg-transparent border-border hover:bg-card-foreground hover:text-card transition-all duration-300"
+//             onClick={onModeToggle}
+//           >
+//             <motion.div
+//               whileHover={{ scale: 1.1 }}
+//               whileTap={{ scale: 0.9 }}
+//               className="flex items-center text-foreground"
+//             >
+//               {mode === 'gui' ? (
+//                 <>
+//                   <TerminalSquare className="w-4 h-4 mr-2 text-primary" />
+//                   Terminal Mode
+//                 </>
+//               ) : (
+//                 <>
+//                   <User className="w-4 h-4 mr-2 text-primary" />
+//                   GUI Mode
+//                 </>
+//               )}
+//             </motion.div>
+//           </Button>
+
+//           {/* Hamburger */}
+//           <button
+//             className="md:hidden p-2 rounded-lg hover:bg-card-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+//             onClick={() => setIsMenuOpen(!isMenuOpen)}
+//             aria-label="Toggle menu"
+//           >
+//             {isMenuOpen
+//               ? <X className="w-6 h-6 text-foreground" />
+//               : <Menu className="w-6 h-6 text-foreground" />
+//             }
+//           </button>
+//         </motion.div>
+//       </div>
+
+//       {/* Mobile Menu */}
+//       <AnimatePresence>
+//         {isMenuOpen && (
+//           <motion.div
+//             initial={{ opacity: 0, y: -20 }}
+//             animate={{ opacity: 1, y: 0 }}
+//             exit={{ opacity: 0, y: -20 }}
+//             transition={{ duration: 0.2 }}
+//             className="md:hidden absolute left-0 right-0 bg-card shadow-lg border-t border-border z-40"
+//           >
+//             <div className="px-4 py-3 space-y-3">
+//               <MobileNavLink to="/" isActive={isHomePage}>
+//                 <Home className="w-5 h-5 mr-3" /> Home
+//               </MobileNavLink>
+//               <MobileNavLink to="/blogs" isActive={location.pathname === '/blogs'}>
+//                 <FileText className="w-5 h-5 mr-3" /> Blogs
+//               </MobileNavLink>
+//               <MobileNavLink to="/interests" isActive={location.pathname === '/interests'}>
+//                 <Code className="w-5 h-5 mr-3" /> Interests
+//               </MobileNavLink>
+
+//               <a
+//                 onClick={handleResumeClick}
+//                 className="flex items-center gap-2 px-4 py-3 rounded-lg border border-primary/20 hover:bg-primary/10 text-primary transition-colors duration-200 cursor-pointer"
+//               >
+//                 <Download className="w-4 h-4" />
+//                 <span>Resume</span>
+//               </a>
+//             </div>
+//           </motion.div>
+//         )}
+//       </AnimatePresence>
+//     </motion.header>
+//   );
+// });
 const AnimatedHeader = React.memo(({ mode, onModeToggle }) => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [location.pathname]);
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [location.pathname]);
+  useEffect(() => { setIsMenuOpen(false); }, [location.pathname]);
+  useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, [location.pathname]);
 
   return (
     <motion.header
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="bg-card text-foreground p-4 sticky top-0 z-50 shadow-md border-b border-border"
+      style={{
+        background: 'var(--card)',
+        borderBottom: '0.5px solid var(--border)',
+        padding: '0 2rem',
+        height: '64px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        position: 'sticky',
+        top: 0,
+        zIndex: 50,
+      }}
     >
-      <div className="mx-auto max-w-5xl flex justify-between items-center">
+      {/* Logo */}
+      <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+        <div style={{
+          width: '32px', height: '32px', borderRadius: '8px',
+          background: 'var(--primary)', display: 'flex', alignItems: 'center',
+          justifyContent: 'center', flexShrink: 0,
+        }}>
+          <span style={{ color: 'var(--primary-foreground)', fontSize: '13px', fontWeight: 500, fontFamily: 'Fira Code, monospace' }}>FC</span>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <span style={{ fontSize: '14px', fontWeight: 500, color: 'var(--foreground)', lineHeight: 1.2 }}>Fidel Castro</span>
+          <span style={{ fontSize: '11px', color: 'var(--muted-foreground)', lineHeight: 1.2 }}>Full Stack Developer</span>
+        </div>
+      </Link>
 
-        {/* Logo */}
-        <motion.div
-          initial={{ x: -20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.5 }}
+      {/* Desktop Nav */}
+      <nav className="hidden md:flex items-center" style={{ gap: '4px' }}>
+        {[
+          { to: '/', label: 'Home', active: isHomePage },
+          { to: '/blogs', label: 'Blogs', active: location.pathname === '/blogs' },
+          { to: '/interests', label: 'Interests', active: location.pathname === '/interests' },
+        ].map(({ to, label, active }) => (
+          <Link key={to} to={to} style={{
+            fontSize: '13px',
+            color: active ? 'var(--primary)' : 'var(--muted-foreground)',
+            textDecoration: 'none',
+            padding: '6px 12px',
+            borderRadius: '6px',
+            background: active ? 'rgba(130, 29, 48, 0.08)' : 'transparent',
+            transition: 'background 0.15s, color 0.15s',
+          }}>{label}</Link>
+        ))}
+
+        <div style={{ width: '0.5px', height: '16px', background: 'var(--border)', margin: '0 8px' }} />
+
+        {/* Available badge */}
+        <div style={{
+          display: 'flex', alignItems: 'center', gap: '5px',
+          fontSize: '11px', color: 'var(--muted-foreground)',
+          padding: '4px 10px', borderRadius: '99px',
+          border: '0.5px solid var(--border)',
+        }}>
+          <span style={{
+            width: '6px', height: '6px', borderRadius: '50%', background: '#22c55e',
+            animation: 'pulse 2s infinite',
+            display: 'inline-block',
+          }} />
+          Available
+        </div>
+      </nav>
+
+      {/* Actions */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <a
+          onClick={handleResumeClick}
+          className="hidden md:flex items-center"
+          style={{
+            gap: '6px', padding: '7px 14px', fontSize: '13px', fontWeight: 500,
+            color: 'var(--primary)', border: '0.5px solid rgba(130, 29, 48, 0.35)',
+            borderRadius: '6px', background: 'rgba(130, 29, 48, 0.06)',
+            cursor: 'pointer', textDecoration: 'none',
+          }}
         >
-          <Link to="/" className="block hover:opacity-80 transition-opacity duration-200">
-            <img
-              src={LOGO_URL}
-              alt="Fidel Castro"
-              style={{ height: '100px', width: 'auto', objectFit: 'contain', display: 'block' }}
-            />
-          </Link>
-        </motion.div>
+          <Download className="w-3.5 h-3.5" />
+          Resume
+        </a>
 
-        {/* Desktop Nav */}
-        <motion.nav
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          className="hidden md:flex items-center gap-6 text-sm"
+        <button
+          onClick={onModeToggle}
+          className="hidden lg:flex items-center"
+          style={{
+            gap: '6px', padding: '7px 14px', fontSize: '13px',
+            color: 'var(--muted-foreground)', border: '0.5px solid var(--border)',
+            borderRadius: '6px', background: 'transparent', cursor: 'pointer',
+            fontFamily: 'Fira Code, monospace',
+          }}
         >
-          <NavLink to="/" isActive={isHomePage}>Home</NavLink>
-          <NavLink to="/blogs" isActive={location.pathname === '/blogs'}>Blogs</NavLink>
-          <NavLink to="/interests" isActive={location.pathname === '/interests'}>Interests</NavLink>
-        </motion.nav>
+          <TerminalSquare className="w-3.5 h-3.5" />
+          {mode === 'gui' ? 'Terminal' : 'GUI'}
+        </button>
 
-        {/* Right Actions */}
-        <motion.div
-          initial={{ x: 20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.5 }}
-          className="flex items-center gap-3"
+        {/* Hamburger */}
+        <button
+          className="md:hidden p-2 rounded-lg"
+          style={{ border: '0.5px solid var(--border)', background: 'transparent', cursor: 'pointer' }}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
         >
-          <a
-            onClick={handleResumeClick}
-            className="hidden md:flex items-center gap-2 px-4 py-2 rounded-lg border border-primary/20 hover:bg-primary/10 text-primary hover:text-foreground transition-colors duration-200 cursor-pointer"
-          >
-            <Download className="w-4 h-4" />
-            <span>Resume</span>
-          </a>
-
-          <Button
-            variant="outline"
-            className="hidden lg:flex bg-transparent border-border hover:bg-card-foreground hover:text-card transition-all duration-300"
-            onClick={onModeToggle}
-          >
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="flex items-center text-foreground"
-            >
-              {mode === 'gui' ? (
-                <>
-                  <TerminalSquare className="w-4 h-4 mr-2 text-primary" />
-                  Terminal Mode
-                </>
-              ) : (
-                <>
-                  <User className="w-4 h-4 mr-2 text-primary" />
-                  GUI Mode
-                </>
-              )}
-            </motion.div>
-          </Button>
-
-          {/* Hamburger */}
-          <button
-            className="md:hidden p-2 rounded-lg hover:bg-card-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen
-              ? <X className="w-6 h-6 text-foreground" />
-              : <Menu className="w-6 h-6 text-foreground" />
-            }
-          </button>
-        </motion.div>
+          {isMenuOpen ? <X className="w-5 h-5" style={{ color: 'var(--foreground)' }} />
+                      : <Menu className="w-5 h-5" style={{ color: 'var(--foreground)' }} />}
+        </button>
       </div>
 
       {/* Mobile Menu */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.2 }}
-            className="md:hidden absolute left-0 right-0 bg-card shadow-lg border-t border-border z-40"
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.15 }}
+            style={{
+              position: 'absolute', top: '64px', left: 0, right: 0,
+              background: 'var(--card)', borderBottom: '0.5px solid var(--border)',
+              padding: '12px 16px', zIndex: 40,
+            }}
+            className="md:hidden"
           >
-            <div className="px-4 py-3 space-y-3">
-              <MobileNavLink to="/" isActive={isHomePage}>
-                <Home className="w-5 h-5 mr-3" /> Home
-              </MobileNavLink>
-              <MobileNavLink to="/blogs" isActive={location.pathname === '/blogs'}>
-                <FileText className="w-5 h-5 mr-3" /> Blogs
-              </MobileNavLink>
-              <MobileNavLink to="/interests" isActive={location.pathname === '/interests'}>
-                <Code className="w-5 h-5 mr-3" /> Interests
-              </MobileNavLink>
-
-              <a
-                onClick={handleResumeClick}
-                className="flex items-center gap-2 px-4 py-3 rounded-lg border border-primary/20 hover:bg-primary/10 text-primary transition-colors duration-200 cursor-pointer"
-              >
-                <Download className="w-4 h-4" />
-                <span>Resume</span>
-              </a>
-            </div>
+            {[
+              { to: '/', label: 'Home', icon: Home, active: isHomePage },
+              { to: '/blogs', label: 'Blogs', icon: FileText, active: location.pathname === '/blogs' },
+              { to: '/interests', label: 'Interests', icon: Code, active: location.pathname === '/interests' },
+            ].map(({ to, label, icon: Icon, active }) => (
+              <Link key={to} to={to} style={{
+                display: 'flex', alignItems: 'center', gap: '10px',
+                padding: '10px 12px', borderRadius: '6px', marginBottom: '4px',
+                color: active ? 'var(--primary)' : 'var(--foreground)',
+                background: active ? 'rgba(130, 29, 48, 0.08)' : 'transparent',
+                textDecoration: 'none', fontSize: '14px',
+              }}>
+                <Icon className="w-4 h-4" /> {label}
+              </Link>
+            ))}
+            <a onClick={handleResumeClick} style={{
+              display: 'flex', alignItems: 'center', gap: '8px', marginTop: '8px',
+              padding: '10px 12px', borderRadius: '6px', cursor: 'pointer',
+              color: 'var(--primary)', fontSize: '14px',
+              border: '0.5px solid rgba(130, 29, 48, 0.3)',
+            }}>
+              <Download className="w-4 h-4" /> Resume
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
