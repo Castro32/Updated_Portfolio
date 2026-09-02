@@ -5,25 +5,39 @@ import { Award } from 'lucide-react';
 
 const Certifications = ({ items }) => {
   if (!items || items.length === 0) return null;
+
   return (
-    <CardMe title="Certifications & Licenses">
-      <div className="space-y-6">
-        {items.map((cert) => (
-          <div key={cert.id} className="border-b border-gray-700 pb-4 last:border-b-0">
-            <div className="flex items-start gap-2">
-             <Award className="w-4 h-4 text-emerald-300 mt-1" />
-              <div>
-                <h4 className="font-semibold text-white">{cert.name}</h4>
-                <p className="text-sm text-gray-400">{cert.issuer} &bull; {cert.date}</p>
-                <p className="text-sm text-gray-400">ID: {cert.credential_id}</p>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {cert.tags?.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="bg-gray-700 text-gray-300 text-xs">
+    <CardMe title="Certifications">
+      <div className="space-y-5">
+        {items.map((cert, index) => (
+          <div
+            key={cert.id || cert.name || index}
+            className="flex items-start gap-3 pb-5 border-b border-primary-light/50 last:border-0 last:pb-0"
+          >
+                <div className="mt-0.5 w-8 h-8 rounded-lg bg-primary/10 border border-primary-light/40 flex items-center justify-center shrink-0">
+              <Award className="w-3.5 h-3.5 text-primary" />
+            </div>
+            <div className="min-w-0">
+              <h4 className="font-semibold text-foreground text-sm leading-snug">{cert.name}</h4>
+              <p className="text-xs text-muted-foreground mt-1 font-mono">
+                {cert.issuer} · {cert.date}
+              </p>
+              {cert.credential_id && (
+                <p className="text-xs text-muted-foreground/80 mt-0.5">ID: {cert.credential_id}</p>
+              )}
+              {(cert.tags || cert.skills)?.length > 0 && (
+                <div className="mt-2.5 flex flex-wrap gap-1.5">
+                  {(cert.tags || cert.skills).slice(0, 4).map((tag) => (
+                    <Badge
+                      key={tag}
+                      variant="secondary"
+                      className="bg-primary-light/30 text-[#2c2a2b] border border-primary-light/50 text-[10px] font-normal"
+                    >
                       {tag}
                     </Badge>
                   ))}
                 </div>
-              </div>
+              )}
             </div>
           </div>
         ))}

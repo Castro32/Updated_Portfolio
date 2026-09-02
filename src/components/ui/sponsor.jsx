@@ -8,10 +8,11 @@ const SponsorButton = ({ onSponsor, className = "" }) => {
   return (
     <Button
       onClick={onSponsor}
-      className={`bg-gray-800 hover:bg-gray-700 text-white border border-gray-600 hover:border-gray-500 transition-all duration-200 flex items-center gap-2 ${className}`}
+      variant="outline"
+      className={`bg-[#f5f4f2] hover:bg-primary/8 text-[#030303] border-primary-light hover:border-primary transition-all duration-200 flex items-center gap-2 shadow-none ${className}`}
     >
-      <Heart className="w-5 h-5 text-green-500 fill-none stroke-2" />
-      Sponsor My Work
+      <Heart className="w-4 h-4 text-primary fill-none stroke-2" />
+      Sponsor
     </Button>
   );
 };

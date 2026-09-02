@@ -225,8 +225,13 @@ import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 
 const BlogsPage = ({ portfolioData }) => {
-  const blogs = portfolioData?.blogs || [];
+  const blogs = [...(portfolioData?.blogs || [])].sort((a, b) => {
+    const da = Date.parse(a.published_date || '') || 0;
+    const db = Date.parse(b.published_date || '') || 0;
+    return db - da;
+  });
 
+  const newest = blogs[0]?.published_date;
   if (blogs.length === 0) {
     return (
       <div className="min-h-screen bg-background">
@@ -279,25 +284,31 @@ const BlogsPage = ({ portfolioData }) => {
             </motion.div>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-            My <span className="text-primary">Blog</span> Posts
+          <p className="font-mono text-[11px] tracking-[0.22em] uppercase text-primary mb-4">Writing</p>
+          <h1 className="font-display text-4xl md:text-5xl tracking-tight text-foreground mb-5">
+            Blog
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Sharing insights, tutorials, and experiences from my journey in software development and technology.
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Notes from shipping full stack products, ecommerce systems, and email marketing — updated regularly.
           </p>
 
-          {/* Stats */}
-          <div className="flex justify-center gap-8 mt-8 text-sm text-muted-foreground">
+          <div className="flex justify-center gap-10 mt-8 text-sm text-muted-foreground">
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary">{blogs.length}</div>
-              <div>Articles</div>
+              <div className="font-display text-2xl text-primary">{blogs.length}</div>
+              <div className="text-xs mt-1">Articles</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary">
+              <div className="font-display text-2xl text-primary">
                 {blogs.reduce((total, blog) => total + (blog.read_time || 0), 0)}
               </div>
-              <div>Total Minutes</div>
+              <div className="text-xs mt-1">Minutes</div>
             </div>
+            {newest && (
+              <div className="text-center">
+                <div className="font-display text-2xl text-primary">{newest.replace(/,.*/, '')}</div>
+                <div className="text-xs mt-1">Latest</div>
+              </div>
+            )}
           </div>
         </motion.div>
 
